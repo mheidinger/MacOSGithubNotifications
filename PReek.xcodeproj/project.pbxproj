@@ -41,6 +41,8 @@
 		6C1CB6F72C921CD100305288 /* IfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1CB6F62C921CCF00305288 /* IfView.swift */; };
 		6C1CB6FB2C921D6500305288 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6C1CB6FA2C921D6500305288 /* MarkdownUI */; };
 		6C1CB6FD2C92344200305288 /* RevealSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1CB6FC2C92342F00305288 /* RevealSecureField.swift */; };
+		6C1F49B82CB5BB9B00C30677 /* SafeArrayIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F49B72CB5BB9300C30677 /* SafeArrayIndex.swift */; };
+		6C1F49B92CB5BB9B00C30677 /* SafeArrayIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F49B72CB5BB9300C30677 /* SafeArrayIndex.swift */; };
 		6C232DE72C08C51D00C003B1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6C232DE62C08C51D00C003B1 /* KeychainAccess */; };
 		6C232DEB2C08C95E00C003B1 /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C232DEA2C08C95E00C003B1 /* ConfigViewModel.swift */; };
 		6C232DED2C08CB9600C003B1 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C232DEC2C08CB9600C003B1 /* KeychainStorage.swift */; };
@@ -126,6 +128,7 @@
 		6C1CB6F32C921CAF00305288 /* CodableAppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableAppStorage.swift; sourceTree = "<group>"; };
 		6C1CB6F62C921CCF00305288 /* IfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfView.swift; sourceTree = "<group>"; };
 		6C1CB6FC2C92342F00305288 /* RevealSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealSecureField.swift; sourceTree = "<group>"; };
+		6C1F49B72CB5BB9300C30677 /* SafeArrayIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArrayIndex.swift; sourceTree = "<group>"; };
 		6C232DEA2C08C95E00C003B1 /* ConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
 		6C232DEC2C08CB9600C003B1 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		6C232DEE2C08F6C600C003B1 /* ConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
@@ -321,6 +324,7 @@
 		6CE096A22C811139002CDFC8 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6C1F49B72CB5BB9300C30677 /* SafeArrayIndex.swift */,
 				6C7C4CA22C087A9900B9B4DA /* IfStringInterpolation.swift */,
 				6C1CB6F62C921CCF00305288 /* IfView.swift */,
 				6C1CB6F32C921CAF00305288 /* CodableAppStorage.swift */,
@@ -515,6 +519,7 @@
 				6C1CB6EE2C921B8600305288 /* IfStringInterpolation.swift in Sources */,
 				6C1CB6F12C921C9900305288 /* CaseIterableDefaultsLast.swift in Sources */,
 				6C1CB6ED2C921B4600305288 /* NotificationDto.swift in Sources */,
+				6C1F49B92CB5BB9B00C30677 /* SafeArrayIndex.swift in Sources */,
 				6C1CB6F52C921CB700305288 /* CodableAppStorage.swift in Sources */,
 				6C1CB6EC2C921B2100305288 /* mergeArray.swift in Sources */,
 				6C1CB6EB2C921AE500305288 /* PullRequestDto.swift in Sources */,
@@ -559,6 +564,7 @@
 				6C66CF3D2C8845A00060F290 /* GitHubGraphQLError.swift in Sources */,
 				6C1CB6F42C921CB700305288 /* CodableAppStorage.swift in Sources */,
 				6CE563FB2C00862E008E9A4B /* DividedView.swift in Sources */,
+				6C1F49B82CB5BB9B00C30677 /* SafeArrayIndex.swift in Sources */,
 				6C232DEB2C08C95E00C003B1 /* ConfigViewModel.swift in Sources */,
 				6C1CB6F22C921C9900305288 /* CaseIterableDefaultsLast.swift in Sources */,
 				6C45077D2C7686C3008EA76D /* ResourceIcon.swift in Sources */,

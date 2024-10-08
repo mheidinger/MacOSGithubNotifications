@@ -75,9 +75,9 @@ struct PullRequest: Identifiable {
         url.appendingPathComponent("files")
     }
 
-    static func preview(title: String? = nil, status: Status? = nil, events: [Event]? = nil, lastUpdated: Date? = nil) -> PullRequest {
+    static func preview(id: String? = nil, title: String? = nil, status: Status? = nil, events: [Event]? = nil, lastUpdated: Date? = nil) -> PullRequest {
         PullRequest(
-            id: UUID().uuidString,
+            id: id ?? UUID().uuidString,
             repository: Repository(name: "max-heidinger/PReek", url: URL(string: "https://example.com")!),
             author: User(login: "max-heidinger", displayName: "Max Heidinger", url: URL(string: "https://example.com")!),
             title: title ?? "[TICKET-23251] Fix some things but the title is pretty long",

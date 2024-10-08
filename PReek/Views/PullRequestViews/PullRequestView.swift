@@ -5,11 +5,13 @@ struct PullRequestView: View {
     var toggleRead: () -> Void
 
     @State var sectionExpanded: Bool
+    let scrollId: String?
 
-    init(_ pullRequest: PullRequest, toggleRead: @escaping () -> Void, sectionExpanded: Bool = false) {
+    init(_ pullRequest: PullRequest, toggleRead: @escaping () -> Void, sectionExpanded: Bool = false, scrollId: String? = nil) {
         self.pullRequest = pullRequest
         self.toggleRead = toggleRead
         self.sectionExpanded = sectionExpanded
+        self.scrollId = scrollId
     }
 
     var body: some View {
@@ -21,8 +23,18 @@ struct PullRequestView: View {
                     .padding(.leading, 10)
             }
         }
+        .padding(.leading, 2)
+        .contentShape(Rectangle())
+        .focusable()
+        .onKeyPress(.space) {
+            sectionExpanded = !sectionExpanded
+            return .handled
+        }
         .onDisappear {
             sectionExpanded = false
+        }
+        .if(scrollId != nil) { view in
+            view.id(scrollId)
         }
     }
 }

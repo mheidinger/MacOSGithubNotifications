@@ -38,7 +38,7 @@ struct PullRequestHeaderView: View {
                         HoverableLink(pullRequest.numberFormatted, destination: pullRequest.url)
                             .foregroundColor(.secondary)
                     }
-                    
+
                     HoverableLink(destination: pullRequest.url) {
                         Text(pullRequest.title)
                             .font(.headline)
@@ -46,7 +46,7 @@ struct PullRequestHeaderView: View {
                             .multilineTextAlignment(.leading)
                     }
                     .foregroundStyle(.primary)
-                    
+
                     details
                 }
                 Spacer()
