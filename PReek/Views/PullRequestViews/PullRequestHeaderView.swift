@@ -38,18 +38,19 @@ struct PullRequestHeaderView: View {
                         HoverableLink(pullRequest.numberFormatted, destination: pullRequest.url)
                             .foregroundColor(.secondary)
                     }
-                    HStack {
-                        HoverableLink(pullRequest.title, destination: pullRequest.url)
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(2)
+                    
+                    HoverableLink(destination: pullRequest.url) {
+                        Text(pullRequest.title)
                             .font(.headline)
-                            .foregroundStyle(.primary)
+                            .lineLimit(2)
+                            .multilineTextAlignment(.leading)
                     }
+                    .foregroundStyle(.primary)
+                    
                     details
                 }
                 Spacer()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
 
             Button(action: toggleRead) {
                 Image(systemName: pullRequest.unread ? "circle.fill" : "circle")
@@ -58,8 +59,6 @@ struct PullRequestHeaderView: View {
             }
             .buttonStyle(.borderless)
         }
-        .padding(.leading)
-        .frame(maxWidth: .infinity)
     }
 
     var details: some View {
@@ -123,6 +122,6 @@ struct PullRequestHeaderView: View {
 }
 
 #Preview {
-    PullRequestHeaderView(PullRequest.preview(), toggleRead: {})
+    PullRequestHeaderView(PullRequest.preview(title: "long long long long long long long long long long long long long long long long long"), toggleRead: {})
         .padding()
 }

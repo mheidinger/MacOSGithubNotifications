@@ -18,6 +18,7 @@ struct PullRequestView: View {
                 PullRequestContentView(pullRequest)
             } label: {
                 PullRequestHeaderView(pullRequest, toggleRead: toggleRead)
+                    .padding(.leading, 10)
             }
         }
         .onDisappear {
@@ -29,7 +30,7 @@ struct PullRequestView: View {
 #Preview {
     ScrollView {
         PullRequestView(
-            PullRequest.preview(),
+            PullRequest.preview(title: "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long lon"),
             toggleRead: {},
             sectionExpanded: true
         )

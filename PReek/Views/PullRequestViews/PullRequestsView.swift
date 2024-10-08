@@ -30,7 +30,7 @@ struct PullRequestsView: View {
 #Preview {
     PullRequestsView([
         PullRequest.preview(title: "short"),
-        PullRequest.preview(title: "long long long long long long long long long long long long long long long long long long"),
+        PullRequest.preview(title: "long long long long long long long long long long long long long long long long long long long"),
         PullRequest.preview(lastUpdated: Calendar.current.date(byAdding: .day, value: -1, to: Date())!),
         PullRequest.preview(lastUpdated: Calendar.current.date(byAdding: .day, value: -3, to: Date())!),
         PullRequest.preview(),
